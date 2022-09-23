@@ -6,6 +6,7 @@ authors = ["@yermakhan.serikbayev <yermkahan.serikbayev@nu.edu.kz>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+Django = "^4.1.1"
 
 [tool.poetry.dev-dependencies]
 
