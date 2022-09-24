@@ -120,4 +120,4 @@ env.bak/
 dmypy.json
 
 # Pyre type checker
-.pyre/
+.pyre/'.idea' 
