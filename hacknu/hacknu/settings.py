@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-y7o*zwf1q_7rguehy05jtf46(8)#*l(!clf$*j6)*6whek42(m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -56,7 +56,7 @@ ROOT_URLCONF = 'hacknu.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [str(BASE_DIR.joinpath('front_end'))],
+        'DIRS': [str(BASE_DIR.joinpath('front_end/starter/src'))],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -123,7 +123,8 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'front_end'),
+    os.path.join(BASE_DIR, 'front_end/starter/src'),
+    # BASE_DIR / 'front_end',
 ]
 
 # Default primary key field type
